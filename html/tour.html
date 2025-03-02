@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/navbar.css">
+        <link rel="stylesheet" href="../css/offcanvas.css">
+        <link rel="stylesheet" href="../css/body.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <title>Tour trong nước</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="bg-navbar">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 none-btn">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-sm-6 d-flex justify-content-start none-display" style="padding: 0px;">
+                            <a href="tel: 19000000" class="nav-link nav-contact" style="color: #fff; margin: 5px;">
+                                <i class="bi bi-telephone-fill" style="font-size: 25px;"></i>
+                                1900 0000
+                            </a>
+                            <a href="mailto: dulich@gmail" class="nav-link nav-contact" style="color: #fff; margin: 5px;">
+                                <i class="bi bi-envelope-at-fill" style="font-size: 25px;"></i>
+                                dulich@gmail
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-6 d-flex justify-content-end none-display">
+                            <a href="#" class="nav-link nav-contact" style="color: #fff; margin: 5px;">
+                                <i class="bi bi-person-fill" style="font-size: 25px;"></i>
+                                Đăng nhập
+                            </a>
+                            <a href="#" class="nav-link nav-contact" style="color: #fff; margin: 5px;">
+                                <i class="bi bi-person-fill-add" style="font-size: 25px;"></i>
+                                Đăng kí
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5 d-flex justify-content-center" id="nav-logo">
+                            <img src="../image/logoweb.png" alt="logo" style="border-radius: 50%; max-width: 100%; height: auto;">
+                        </div> 
+                        <div class="col-md-12 col-lg-7 d-flex align-items-center">
+                            <form class="d-flex" role="search" style="width: 100%;">
+                                <input class="form-control me-2 search-input" type="search" placeholder="Tìm tour " aria-label="Search">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="nav-navigation container-lg d-flex justify-content-center">
+                        <ul class="navbar-nav flex-row mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link nav-navigation-link" aria-current="page" href="#">Trang chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-navigation-link" aria-current="page" href="#">Giới thiệu</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle nav-navigation-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Tour
+                                </a>
+                                <ul class="dropdown-menu" style="width: 300px;">
+                                    <li><a class="dropdown-item" href="#">Du lịch Hà Nội</a></li>
+                                    <li><a class="dropdown-item" href="#">Du lịch Thành phố Hồ Chí Minh</a></li>
+                                    <li><a class="dropdown-item" href="#">Du lịch Hạ Long</a></li>
+                                    <li><a class="dropdown-item" href="#">Du lịch Hội An</a></li>
+                                    <li><a class="dropdown-item" href="#">Du lịch Đà Nẵng</a></li>
+                                    <li><a class="dropdown-item" href="#">Du lịch Đà Lạt</a></li>
+                                    <li><a class="dropdown-item" href="#">Du lịch Cần Thơ</a></li>
+                                    <li><a class="dropdown-item" href="#">Du lịch Phú Quốc</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-navigation-link" href="#" aria-expanded="false">
+                                    Cẩm nang du lịch
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-navigation-link" href="#" aria-expanded="false">
+                                    Liên hệ
+                                </a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-background">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="profile">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="#"><i class="bi bi-person-circle" style="font-size: 60px; color: #fff;"></i></a>
+                    </div>
+                    <div class="offcanvas-btn d-flex justify-content-center align-items-center">
+                        <button type="button" class="off-btn-css">Đăng nhập</button>
+                        <button type="button" class="off-btn-css">Đăng kí</button>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="off-list-menu">
+                    <li class="off-list-item"><a href="#" class="off-list-link">Trang chủ</a></li>
+                    <li class="off-list-item"><a href="#" class="off-list-link">Giới thiệu</a></li>
+                    <li class="off-list-item" class="dropdown">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <a href="#" class="dropdown-toggle off-list-link" role="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Tour
+                                </a>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul class="off-list-menu" style="width: 300px;">
+                                        <li><a class="off-list-link-ul" href="#">Du lịch Hà Nội</a></li>
+                                        <li><a class="off-list-link-ul" href="#">Du lịch Thành phố Hồ Chí Minh</a></li>
+                                        <li><a class="off-list-link-ul" href="#">Du lịch Hạ Long</a></li>
+                                        <li><a class="off-list-link-ul" href="#">Du lịch Hội An</a></li>
+                                        <li><a class="off-list-link-ul" href="#">Du lịch Đà Nẵng</a></li>
+                                        <li><a class="off-list-link-ul" href="#">Du lịch Đà Lạt</a></li>
+                                        <li><a class="off-list-link-ul" href="#">Du lịch Cần Thơ</a></li>
+                                        <li><a class="off-list-link-ul" href="#">Du lịch Phú Quốc</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="off-list-item"><a href="#" class="off-list-link">Dịch vụ tour</a></li>
+                    <li class="off-list-item"><a href="#" class="off-list-link">Cẩm nang du lịch</a></li>
+                    <li class="off-list-item"><a href="#" class="off-list-link">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container body-web">
+            <div class="d-flex flex-column align-items-center">
+                <h2 style="color: #0092e0; margin-top: 10px;">TOUR</h2>
+                <hr style="width: 100px; height: 5px; background-color: navy; border-radius: 10px; border: none; opacity: 1; margin-bottom: 40px;">
+            </div>
+            <div class="product" >
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12" style="margin-bottom: 15px;">
+                        <select class="form-select form-select-sm" aria-label="Small select example">
+                            <option selected class="select">Chọn mức giá</option>
+                            <option value="1">0đ - 5.000.000đ</option>
+                            <option value="2">5.000.000đ - 10.000.000đ</option>
+                            <option value="3">10.000.000đ - 15.000.000đ</option>
+                            <option value="4">15.000.000đ - 20.000.000đ</option>
+                            <option value="5">20.000.000đ - 25.000.000đ</option>
+                            <option value="5">25.000.000đ - 30.000.000đ</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12" style="margin-bottom: 15px;">
+                        <select class="form-select form-select-sm" aria-label="Small select example">
+                            <option selected class="select">Điểm đi</option>
+                            <option value="1">Hà Nội</option>
+                            <option value="2">Thành phố Hồ Chí Minh</option>
+                            <option value="3">Đà Nẵng</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12" style="margin-bottom: 15px;">
+                        <select class="form-select form-select-sm" aria-label="Small select example">
+                            <option selected class="select">Điểm đến</option>
+                            <option value="1">Hà Nội</option>
+                            <option value="2">Thành phố Hồ Chí Minh</option>
+                            <option value="3">Đà Nẵng</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-12" style="margin-bottom: 15px;">
+                        <select class="form-select form-select-sm" aria-label="Small select example">
+                            <option selected class="select">Đánh giá</option>
+                            <option value="1">★</option>
+                            <option value="2">★★</option>
+                            <option value="3">★★★</option>
+                            <option value="4">★★★★</option>
+                            <option value="5">★★★★★</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div id="content1" class="content active-content">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-xl-3 col-sm-6 col-12 d-flex justify-content-center align-items-center">
+                            <div class="card" style="width: auto;">
+                                <a href="#" class="product-img-link"><img src="../image/anam-resort-nha-trang-vietnam-23.webp" class="card-img-top product-card-img" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="discount-badge">- 3%</span>
+                                    <div class="card-body">
+                                        <a href="#" class="tour-name"><h4 class="card-title">Du lịch</h4></a>
+                                        <div class="d-flex">
+                                            <span class="price">6.300.000đ</span>
+                                            <div class="vehicle"><i class="bi bi-bus-front-fill"></i> <i class="bi bi-airplane-fill"></i></div>
+                                        </div>
+                                        <p class="old-price">6.500.000đ</p>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="icon-text"><i class="bi bi-calendar3"></i> Khởi hành: Thứ 7 hằng tuần</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span class="icon-text"><i class="bi bi-clock"></i> Thời gian: 3 ngày 2 đêm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 col-12 d-flex justify-content-center align-items-center">
+                            <div class="card" style="width: auto;">
+                                <a href="#" class="product-img-link"><img src="../image/anam-resort-nha-trang-vietnam-23.webp" class="card-img-top product-card-img" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="discount-badge">- 3%</span>
+                                    <div class="card-body">
+                                        <a href="#" class="tour-name"><h4 class="card-title">Du lịch</h4></a>
+                                        <div class="d-flex">
+                                            <span class="price">6.300.000đ</span>
+                                            <div class="vehicle"><i class="bi bi-bus-front-fill"></i> <i class="bi bi-airplane-fill"></i></div>
+                                        </div>
+                                        <p class="old-price">6.500.000đ</p>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="icon-text"><i class="bi bi-calendar3"></i> Khởi hành: Thứ 7 hằng tuần</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span class="icon-text"><i class="bi bi-clock"></i> Thời gian: 3 ngày 2 đêm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 col-12 d-flex justify-content-center align-items-center">
+                            <div class="card" style="width: auto;">
+                                <a href="#" class="product-img-link"><img src="../image/anam-resort-nha-trang-vietnam-23.webp" class="card-img-top product-card-img" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="discount-badge">- 3%</span>
+                                    <div class="card-body">
+                                        <a href="#" class="tour-name"><h4 class="card-title">Du lịch</h4></a>
+                                        <div class="d-flex">
+                                            <span class="price">6.300.000đ</span>
+                                            <div class="vehicle"><i class="bi bi-bus-front-fill"></i> <i class="bi bi-airplane-fill"></i></div>
+                                        </div>
+                                        <p class="old-price">6.500.000đ</p>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="icon-text"><i class="bi bi-calendar3"></i> Khởi hành: Thứ 7 hằng tuần</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span class="icon-text"><i class="bi bi-clock"></i> Thời gian: 3 ngày 2 đêm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 col-12 d-flex justify-content-center align-items-center">
+                            <div class="card" style="width: auto;">
+                                <a href="#" class="product-img-link"><img src="../image/anam-resort-nha-trang-vietnam-23.webp" class="card-img-top product-card-img" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="discount-badge">- 3%</span>
+                                    <div class="card-body">
+                                        <a href="#" class="tour-name"><h4 class="card-title">Du lịch</h4></a>
+                                        <div class="d-flex">
+                                            <span class="price">6.300.000đ</span>
+                                            <div class="vehicle"><i class="bi bi-bus-front-fill"></i> <i class="bi bi-airplane-fill"></i></div>
+                                        </div>
+                                        <p class="old-price">6.500.000đ</p>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="icon-text"><i class="bi bi-calendar3"></i> Khởi hành: Thứ 7 hằng tuần</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span class="icon-text"><i class="bi bi-clock"></i> Thời gian: 3 ngày 2 đêm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-3 col-sm-6 col-12 d-flex justify-content-center align-items-center">
+                            <div class="card" style="width: auto;">
+                                <a href="#" class="product-img-link"><img src="../image/anam-resort-nha-trang-vietnam-23.webp" class="card-img-top product-card-img" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="discount-badge">- 3%</span>
+                                    <div class="card-body">
+                                        <a href="#" class="tour-name"><h4 class="card-title">Du lịch</h4></a>
+                                        <div class="d-flex">
+                                            <span class="price">6.300.000đ</span>
+                                            <div class="vehicle"><i class="bi bi-bus-front-fill"></i> <i class="bi bi-airplane-fill"></i></div>
+                                        </div>
+                                        <p class="old-price">6.500.000đ</p>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="icon-text"><i class="bi bi-calendar3"></i> Khởi hành: Thứ 7 hằng tuần</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span class="icon-text"><i class="bi bi-clock"></i> Thời gian: 3 ngày 2 đêm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 col-12 d-flex justify-content-center align-items-center">
+                            <div class="card" style="width: auto;">
+                                <a href="#" class="product-img-link"><img src="../image/anam-resort-nha-trang-vietnam-23.webp" class="card-img-top product-card-img" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="discount-badge">- 3%</span>
+                                    <div class="card-body">
+                                        <a href="#" class="tour-name"><h4 class="card-title">Du lịch</h4></a>
+                                        <div class="d-flex">
+                                            <span class="price">6.300.000đ</span>
+                                            <div class="vehicle"><i class="bi bi-bus-front-fill"></i> <i class="bi bi-airplane-fill"></i></div>
+                                        </div>
+                                        <p class="old-price">6.500.000đ</p>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="icon-text"><i class="bi bi-calendar3"></i> Khởi hành: Thứ 7 hằng tuần</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span class="icon-text"><i class="bi bi-clock"></i> Thời gian: 3 ngày 2 đêm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 col-12 d-flex justify-content-center align-items-center">
+                            <div class="card" style="width: auto;">
+                                <a href="#" class="product-img-link"><img src="../image/anam-resort-nha-trang-vietnam-23.webp" class="card-img-top product-card-img" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="discount-badge">- 3%</span>
+                                    <div class="card-body">
+                                        <a href="#" class="tour-name"><h4 class="card-title">Du lịch</h4></a>
+                                        <div class="d-flex">
+                                            <span class="price">6.300.000đ</span>
+                                            <div class="vehicle"><i class="bi bi-bus-front-fill"></i> <i class="bi bi-airplane-fill"></i></div>
+                                        </div>
+                                        <p class="old-price">6.500.000đ</p>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="icon-text"><i class="bi bi-calendar3"></i> Khởi hành: Thứ 7 hằng tuần</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span class="icon-text"><i class="bi bi-clock"></i> Thời gian: 3 ngày 2 đêm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 col-12 d-flex justify-content-center align-items-center">
+                            <div class="card" style="width: auto;">
+                                <a href="#" class="product-img-link"><img src="../image/anam-resort-nha-trang-vietnam-23.webp" class="card-img-top product-card-img" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="discount-badge">- 3%</span>
+                                    <div class="card-body">
+                                        <a href="#" class="tour-name"><h4 class="card-title">Du lịch</h4></a>
+                                        <div class="d-flex">
+                                            <span class="price">6.300.000đ</span>
+                                            <div class="vehicle"><i class="bi bi-bus-front-fill"></i> <i class="bi bi-airplane-fill"></i></div>
+                                        </div>
+                                        <p class="old-price">6.500.000đ</p>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="icon-text"><i class="bi bi-calendar3"></i> Khởi hành: Thứ 7 hằng tuần</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span class="icon-text"><i class="bi bi-clock"></i> Thời gian: 3 ngày 2 đêm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-3 col-sm-6 col-12 d-flex justify-content-center align-items-center">
+                            <div class="card" style="width: auto;">
+                                <a href="#" class="product-img-link"><img src="../image/anam-resort-nha-trang-vietnam-23.webp" class="card-img-top product-card-img" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="discount-badge">- 3%</span>
+                                    <div class="card-body">
+                                        <a href="#" class="tour-name"><h4 class="card-title">Du lịch</h4></a>
+                                        <div class="d-flex">
+                                            <span class="price">6.300.000đ</span>
+                                            <div class="vehicle"><i class="bi bi-bus-front-fill"></i> <i class="bi bi-airplane-fill"></i></div>
+                                        </div>
+                                        <p class="old-price">6.500.000đ</p>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="icon-text"><i class="bi bi-calendar3"></i> Khởi hành: Thứ 7 hằng tuần</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span class="icon-text"><i class="bi bi-clock"></i> Thời gian: 3 ngày 2 đêm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="col-xl-3 col-sm-6 col-12 d-flex justify-content-center align-items-center">
+                            <div class="card" style="width: auto;">
+                                <a href="#" class="product-img-link"><img src="../image/anam-resort-nha-trang-vietnam-23.webp" class="card-img-top product-card-img" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="discount-badge">- 3%</span>
+                                    <div class="card-body">
+                                        <a href="#" class="tour-name"><h4 class="card-title">Du lịch</h4></a>
+                                        <div class="d-flex">
+                                            <span class="price">6.300.000đ</span>
+                                            <div class="vehicle"><i class="bi bi-bus-front-fill"></i> <i class="bi bi-airplane-fill"></i></div>
+                                        </div>
+                                        <p class="old-price">6.500.000đ</p>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="icon-text"><i class="bi bi-calendar3"></i> Khởi hành: Thứ 7 hằng tuần</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span class="icon-text"><i class="bi bi-clock"></i> Thời gian: 3 ngày 2 đêm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="col-xl-3 col-sm-6 col-12 d-flex justify-content-center align-items-center">
+                            <div class="card" style="width: auto;">
+                                <a href="#" class="product-img-link"><img src="../image/anam-resort-nha-trang-vietnam-23.webp" class="card-img-top product-card-img" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="discount-badge">- 3%</span>
+                                    <div class="card-body">
+                                        <a href="#" class="tour-name"><h4 class="card-title">Du lịch</h4></a>
+                                        <div class="d-flex">
+                                            <span class="price">6.300.000đ</span>
+                                            <div class="vehicle"><i class="bi bi-bus-front-fill"></i> <i class="bi bi-airplane-fill"></i></div>
+                                        </div>
+                                        <p class="old-price">6.500.000đ</p>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="icon-text"><i class="bi bi-calendar3"></i> Khởi hành: Thứ 7 hằng tuần</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span class="icon-text"><i class="bi bi-clock"></i> Thời gian: 3 ngày 2 đêm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="col-xl-3 col-sm-6 col-12 d-flex justify-content-center align-items-center">
+                            <div class="card" style="width: auto;">
+                                <a href="#" class="product-img-link"><img src="../image/anam-resort-nha-trang-vietnam-23.webp" class="card-img-top product-card-img" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="discount-badge">- 3%</span>
+                                    <div class="card-body">
+                                        <a href="#" class="tour-name"><h4 class="card-title">Du lịch</h4></a>
+                                        <div class="d-flex">
+                                            <span class="price">6.300.000đ</span>
+                                            <div class="vehicle"><i class="bi bi-bus-front-fill"></i> <i class="bi bi-airplane-fill"></i></div>
+                                        </div>
+                                        <p class="old-price">6.500.000đ</p>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="icon-text"><i class="bi bi-calendar3"></i> Khởi hành: Thứ 7 hằng tuần</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span class="icon-text"><i class="bi bi-clock"></i> Thời gian: 3 ngày 2 đêm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content2" class="content">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-xl-3 col-sm-6 col-12 d-flex justify-content-center align-items-center">
+                            <div class="card" style="width: auto;">
+                                <a href="#" class="product-img-link"><img src="../image/anam-resort-nha-trang-vietnam-23.webp" class="card-img-top product-card-img" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="discount-badge">- 3%</span>
+                                    <div class="card-body">
+                                        <a href="#" class="tour-name"><h4 class="card-title">Du lịch</h4></a>
+                                        <div class="d-flex">
+                                            <span class="price">6.300.000đ</span>
+                                            <div class="vehicle"><i class="bi bi-bus-front-fill"></i> <i class="bi bi-airplane-fill"></i></div>
+                                        </div>
+                                        <p class="old-price">6.500.000đ</p>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="icon-text"><i class="bi bi-calendar3"></i> Khởi hành: Thứ 7 hằng tuần</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span class="icon-text"><i class="bi bi-clock"></i> Thời gian: 3 ngày 2 đêm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 col-12 d-flex justify-content-center align-items-center">
+                            <div class="card" style="width: auto;">
+                                <a href="#" class="product-img-link"><img src="../image/anam-resort-nha-trang-vietnam-23.webp" class="card-img-top product-card-img" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="discount-badge">- 3%</span>
+                                    <div class="card-body">
+                                        <a href="#" class="tour-name"><h4 class="card-title">Du lịch</h4></a>
+                                        <div class="d-flex">
+                                            <span class="price">6.300.000đ</span>
+                                            <div class="vehicle"><i class="bi bi-bus-front-fill"></i> <i class="bi bi-airplane-fill"></i></div>
+                                        </div>
+                                        <p class="old-price">6.500.000đ</p>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="icon-text"><i class="bi bi-calendar3"></i> Khởi hành: Thứ 7 hằng tuần</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span class="icon-text"><i class="bi bi-clock"></i> Thời gian: 3 ngày 2 đêm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 col-12 d-flex justify-content-center align-items-center">
+                            <div class="card" style="width: auto;">
+                                <a href="#" class="product-img-link"><img src="../image/anam-resort-nha-trang-vietnam-23.webp" class="card-img-top product-card-img" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="discount-badge">- 3%</span>
+                                    <div class="card-body">
+                                        <a href="#" class="tour-name"><h4 class="card-title">Du lịch</h4></a>
+                                        <div class="d-flex">
+                                            <span class="price">6.300.000đ</span>
+                                            <div class="vehicle"><i class="bi bi-bus-front-fill"></i> <i class="bi bi-airplane-fill"></i></div>
+                                        </div>
+                                        <p class="old-price">6.500.000đ</p>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="icon-text"><i class="bi bi-calendar3"></i> Khởi hành: Thứ 7 hằng tuần</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span class="icon-text"><i class="bi bi-clock"></i> Thời gian: 3 ngày 2 đêm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 col-12 d-flex justify-content-center align-items-center">
+                            <div class="card" style="width: auto;">
+                                <a href="#" class="product-img-link"><img src="../image/anam-resort-nha-trang-vietnam-23.webp" class="card-img-top product-card-img" alt="..."></a>
+                                <div class="card-body">
+                                    <span class="discount-badge">- 3%</span>
+                                    <div class="card-body">
+                                        <a href="#" class="tour-name"><h4 class="card-title">Du lịch</h4></a>
+                                        <div class="d-flex">
+                                            <span class="price">6.300.000đ</span>
+                                            <div class="vehicle"><i class="bi bi-bus-front-fill"></i> <i class="bi bi-airplane-fill"></i></div>
+                                        </div>
+                                        <p class="old-price">6.500.000đ</p>
+                                        <div class="d-flex justify-content-between">
+                                            <span class="icon-text"><i class="bi bi-calendar3"></i> Khởi hành: Thứ 7 hằng tuần</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span class="icon-text"><i class="bi bi-clock"></i> Thời gian: 3 ngày 2 đêm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center mt-3">
+                    <li class="page-item"><a class="page-link" href="#" onclick="showContent(1)">«</a></li>
+                    <li class="page-item"><a class="page-link active" href="#" onclick="showContent(1)">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#" onclick="showContent(2)">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#" onclick="showContent(2)">»</a></li>
+                </ul>
+            </nav>
+
+            <script>
+                function showContent(page) {
+                    document.querySelectorAll('.content').forEach(el => el.classList.remove('active-content'));
+                    document.querySelector(`#content${page}`).classList.add('active-content');
+            
+                    document.querySelectorAll('.page-link').forEach(el => el.classList.remove('active'));
+                    document.querySelector(`.pagination li:nth-child(${page + 1}) .page-link`).classList.add('active');
+                }
+            </script>
+        </div>
+
+        <div class=" footer-background">
+            <hr style="width: 100%; height: 1px; background-color: black; border: none; opacity: 1; margin-bottom: 0px;">
+            <div class="container">
+                <footer class="row row-cols-1 row-cols-sm-2 row-cols-xl-4" style="padding: 25px;">
+                    <div class="col mb-3">
+                        <h4 class="footer-text">LIÊN HỆ</h4>
+                        <div class="d-flex">
+                            <div class="footer-phone">
+                                <i class="bi bi-telephone-outbound-fill footer-text"></i>
+                            </div>
+                            <div class="footer-contact-info">
+                                <p class="footer-text">
+                                    Hỗ trợ trực tuyến 24/7
+                                </p>
+                                <p class="footer-text">
+                                    HOTLINE: <a href="tel:1900000" style="text-decoration: none;">1900 0000</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+              
+                    <div class="col mb-3">
+                        <h5 class="footer-text" onclick="toggleSection(this)">Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">About</a></li>
+                        </ul>
+                    </div>
+              
+                    <div class="col mb-3">
+                        <h5 class="footer-text" onclick="toggleSection(this)">Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">About</a></li>
+                        </ul>
+                    </div>
+              
+                    <div class="col mb-3">
+                        <h5 class="footer-text" onclick="toggleSection(this)">Section</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Features</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">Pricing</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text">About</a></li>
+                        </ul>
+                    </div>
+
+                    <script>
+                        function toggleSection(header) {
+                            let list = header.nextElementSibling; 
+                            if (list.style.display === "none") {
+                                list.style.display = "block"; 
+                            } else {
+                                list.style.display = "none"; 
+                            }
+                        }
+                    </script>
+                </footer>
+            </div>
+            <div class="d-flex justify-content-center align-items-center footer-line-end">
+                <p class="footer-text footer-text">&copy; 2025 | Bản quyền</p>
+            </div>
+        </div>
+
+        
+        <script src="../js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

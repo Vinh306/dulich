@@ -1,0 +1,63 @@
+.offcanvas-background {
+    background-image: url(../image/br-nav-slide-left.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.offcanvas-btn {
+    margin: 10px 0px;
+}
+
+.off-btn-css {
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 217, 156, 0.4);
+    line-height: 40px;
+    width: 100px;
+}
+
+.off-btn-css:hover {
+    background-color: darkorange;
+    color: #007BFF;
+    transition: 0.5s;
+}
+
+.off-list-menu {
+    list-style: none;
+}
+
+.off-list-item {
+    text-decoration: none;
+    color: #026ca6;
+    margin: 5px;
+}
+
+.off-list-link {
+    text-decoration: none;
+    font-size: larger;
+    color: #026ca6;
+}
+
+.off-list-link:hover {
+    display: block;
+    color: brown;
+    transition: 0.4s;
+}
+
+.off-list-link-ul {
+    text-decoration: none;
+}
+
+.off-list-link-ul:hover {
+    display: block;
+    color: #e87f2a;
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.accordion-item {
+    border: none !important;
+}
